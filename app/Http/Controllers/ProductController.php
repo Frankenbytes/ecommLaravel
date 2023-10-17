@@ -12,7 +12,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return response()->json(Products::all(), 200);
+
+        return response()->json(Product::all(), 200);
+        
     }
 
     /**
