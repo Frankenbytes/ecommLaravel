@@ -70,7 +70,7 @@ class ProductController extends Controller
     {
         if($product) {
             $product->delete();
-            return respones()->json(null, 204);
+            return response()->json(['message' => 'Product successfully deleted'], 204);
         } else {
             return response()->json(['message' => 'Product not found'], 404);
         }
